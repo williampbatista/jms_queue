@@ -13,7 +13,7 @@ public class JmsController {
 
 	@GetMapping()
 	public String JsmTesteController() {
-		jmsTemplate.convertAndSend("myDestination", "{user: 'wolmir', usando: 'fila'}");
+		jmsTemplate.convertAndSend("myDestination", "PARAMETER");
 		return null;
 	}
 }
